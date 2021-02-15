@@ -20,6 +20,11 @@ ctx.moveTo(x, y);
 ctx.lineTo(x, y);
 ctx.stroke();
 
+// draw function 
+function draw(options) {
+
+}
+
 // key handler function 
 function handleKey(e) {
     if (e.key.includes(`Arrow`)) {
