@@ -16,6 +16,8 @@ ctx.lineJoin = `round`;
 ctx.lineCap = `round`;
 ctx.lineWidth = MOVE_AMOUNT;
 
+let hue = 0;
+
 ctx.beginPath(); // start the drawing
 ctx.moveTo(x, y);
 ctx.lineTo(x, y);
@@ -23,6 +25,9 @@ ctx.stroke();
 
 // draw function 
 function draw({ key }) {
+    // change the hue value 
+    hue += 1;
+    ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
     // start the path 
     ctx.beginPath();
     ctx.moveTo(x, y);
@@ -48,7 +53,6 @@ function draw({ key }) {
 
     ctx.lineTo(x, y);
     ctx.stroke();
-    console.log(key);
 }
 
 // key handler function 
