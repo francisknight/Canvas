@@ -27,8 +27,7 @@ function draw({ key }) {
     ctx.beginPath();
     ctx.moveTo(x, y);
 
-    // move to user position 
-
+    // move to user (key) position 
     switch (key) {
         case `ArrowUp`:
             y -= MOVE_AMOUNT;
