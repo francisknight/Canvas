@@ -30,7 +30,6 @@ function handleKey(e) {
     if (e.key.includes(`Arrow`)) {
         e.preventDefault();
         draw({ key: e.key });
-        console.log(`Handling Key`);
     }
 }
 
