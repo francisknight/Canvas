@@ -1,3 +1,3 @@
 ### Canvas
-
-<p> example text </p>
+<br>
+<p> Sketch game using HTML canvas & JavaScript </p>
