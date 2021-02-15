@@ -19,3 +19,11 @@ ctx.beginPath(); // start the drawing
 ctx.moveTo(x, y);
 ctx.lineTo(x, y);
 ctx.stroke();
+
+// key handler function 
+function handleKey() {
+
+}
+
+// listen for window event (arrow keys)
+window.addEventListener(`keydown`, handleKey);
