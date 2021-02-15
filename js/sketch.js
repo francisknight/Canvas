@@ -21,14 +21,15 @@ ctx.lineTo(x, y);
 ctx.stroke();
 
 // draw function 
-function draw(options) {
-
+function draw({ key }) {
+    console.log(key);
 }
 
 // key handler function 
 function handleKey(e) {
     if (e.key.includes(`Arrow`)) {
         e.preventDefault();
+        draw({ key: e.key });
         console.log(`Handling Key`);
     }
 }
