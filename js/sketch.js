@@ -21,8 +21,11 @@ ctx.lineTo(x, y);
 ctx.stroke();
 
 // key handler function 
-function handleKey() {
-
+function handleKey(e) {
+    if (e.key.includes(`Arrow`)) {
+        e.preventDefault();
+        console.log(`Handling Key`);
+    }
 }
 
 // listen for window event (arrow keys)
