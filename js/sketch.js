@@ -7,6 +7,10 @@ const shakeButton = document.querySelector(`.shake`);
 const width = canvas.width; // x
 const height = canvas.height; // y
 
+// create random x and y postion
+let x = Math.floor(Math.random() * width);
+let y = Math.floor(Math.random() * height);
+
 ctx.lineJoin = `round`;
 ctx.lineCap = `round`;
 ctx.lineWidth = `10`;
@@ -15,7 +19,3 @@ ctx.beginPath(); // start the drawing
 ctx.moveTo(200, 200);
 ctx.lineTo(200, 200);
 ctx.stroke();
-
-// create random x and y postion
-let x = Math.floor(Math.random() * width);
-let y = Math.floor(Math.random() * height);
