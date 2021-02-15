@@ -22,6 +22,15 @@ ctx.stroke();
 
 // draw function 
 function draw({ key }) {
+    // start the path 
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+
+    // move to user position 
+    x = -10;
+    y = -10;
+    ctx.lineTo(x, y);
+    ctx.stroke();
     console.log(key);
 }
 
