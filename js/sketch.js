@@ -27,8 +27,8 @@ function draw({ key }) {
     ctx.moveTo(x, y);
 
     // move to user position 
-    x = -10;
-    y = -10;
+    x -= 10;
+    y -= 10;
     ctx.lineTo(x, y);
     ctx.stroke();
     console.log(key);
